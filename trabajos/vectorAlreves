@@ -1,0 +1,11 @@
+vector = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+for(let i = 0; i <= (vector.length - 1) / 2; i++) {
+    aux = vector [i];
+
+    vector [i] = vector [(vector.length-1)-i];
+    vector [(vector.length-1)-i] = aux;
+
+}
+
+console.log(`Vector final: ${vector}`);
